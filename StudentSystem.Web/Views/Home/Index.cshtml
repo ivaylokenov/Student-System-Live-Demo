@@ -1,0 +1,19 @@
+﻿@model IEnumerable<StudentSystem.Model.Course>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table>
+    @foreach (var course in Model)
+    {
+        <tr>
+            <td>
+                @course.Name
+            </td>
+            <td>
+                @course.Description
+            </td>
+        </tr>
+    }
+</table>
